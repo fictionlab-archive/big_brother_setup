@@ -1,0 +1,5 @@
+<launch>
+
+  <include file="$(find leo_big_brother)/launch/big_brother.launch"/>
+
+</launch>

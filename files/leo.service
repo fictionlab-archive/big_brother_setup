@@ -1,0 +1,10 @@
+[Unit]
+Description="big brother service"
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/leo-start
+
+[Install]
+WantedBy=multi-user.target
