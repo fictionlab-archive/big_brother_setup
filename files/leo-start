@@ -2,7 +2,7 @@
 
 source /etc/ros/setup.bash
 
-LAUNCH_FILE=${LAUNCH_FILE:="/etc/ros/robot.launch"}
+LAUNCH_FILE=${LAUNCH_FILE:="/etc/ros/system.launch"}
 
 roslaunch $LAUNCH_FILE $ROSLAUNCH_ARGS &
 
