@@ -4,8 +4,11 @@ mkdir -p -m 775 "/etc/ros/catkin_ws/src"
 
 
 pushd /etc/ros/catkin_ws/src
-git clone https://github.com/fictionlab/big_brother.git
-git clone https://github.com/fictionlab/ipcamera_driver.git
+# git clone https://github.com/fictionlab/big_brother.git
+# git clone https://github.com/fictionlab/ipcamera_driver.git
+install -v -m 664 packages/ipcamera_driver/* "/etc/ros/catkin_ws/src"
+install -v -m 664 packages/leo_big_brother/* "/etc/ros/catkin_ws/src"
+
 cd ..
 catkin config --extend /opt/ros/melodic 
 rosdep update
